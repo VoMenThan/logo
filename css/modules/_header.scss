@@ -29,20 +29,12 @@ header#header-logo-main{
 
     .phone-number{
       a.telephone{
-        &:before{
-          background: url("../images/ico-phone.png") no-repeat center center;
-          -webkit-background-size: 100% auto;
-          background-size: 100% auto;
-        }
+
       }
     }
     .send-mail{
       a.email{
-        &:before{
-          background: url("../images/ico-mail.png") no-repeat center center;
-          -webkit-background-size: 100% auto;
-          background-size: 100% auto;
-        }
+
       }
     }
     /*list socials*/
