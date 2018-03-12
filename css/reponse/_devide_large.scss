@@ -4,6 +4,19 @@ and (min-width: $devide_size_large)
   /*
 * devide large > 1200px
 */
-  @include setMarginTopMenu(56px);
-  @include resizeHeaderMenu(100%, 19px 10px)
+  header#header-logo-main {
+    .box-menu-header {
+      .nav-logo-page {
+        ul.box-main-menu {
+          li.list-menu {
+            a.item-menu {
+              padding: 5px 15px;
+              font-size: 1em;
+
+            }
+          }
+        }
+      }
+    }
+  }
 }

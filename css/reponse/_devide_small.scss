@@ -5,13 +5,104 @@ and (max-width: $devide_size_medium)
   /*
 * devide small > 768px and < 992px
 */
-  @include setMarginTopMenu(56px);
-  @include setHeaderMediumCenter();
-  @include resizeHeaderMenu(100%, 30px 7px, 15px);
-  @include setFontSizeFooter();
-  .content-portforlio div.box-portfolio{
-    margin-top: 20px;
+
+  header#header-logo-main{
+    -webkit-background-size: auto;
+    background-size: auto;
+    /*navigate status social top*/
+    .bar-top-header{
+      .button-top{
+        border: none;
+        padding: 2px 0;
+        a{
+          span{
+            display: none;
+          }
+        }
+      }
+      .phone-number{
+        a.telephone{
+
+        }
+      }
+      .send-mail{
+        a.email{
+
+        }
+      }
+      /*list socials*/
+      .list-socials{
+        border: none;
+        padding: 2px 0;
+        ul.box-socials{
+          li.item-social{
+
+            span.icon{
+
+            }
+
+          }
+        }
+      }
+
+    }
+    /*navigate status social top*/
+
+    /*box menu navigation header*/
+    .box-menu-header{
+      padding-top: 20px;
+      position: relative;
+      .logo-main{
+        text-align: center;
+      }
+      .nav-logo-page{
+        ul.box-main-menu{
+          li.list-menu{
+            a.item-menu{
+              display: block;
+              font-size: 1em;
+              text-align: center;
+              padding: 5px 10px;
+            }
+
+          }
+        }
+      }
+    }
+    /*box menu navigation header*/
+
+    /*box advertise*/
+    .box-advertise{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      .advertise-left{
+        border: none;
+        .text-advertise{
+          font-size: 1.5em;
+        }
+        .btn-view {
+          height: auto;
+          padding: 5px 5px;
+          font-size: 1em;
+        }
+      }
+      .advertise-right {
+        .title-advertise{
+          font-size: 1.5em;
+          padding-top: 20px;
+        }
+      }
+
+    }
+    /*box advertise*/
   }
 
-  @include setMarginPartner(30px, 30px);
+
+  /*box profit*/
+  .box-profit{
+    background-size: auto;
+    background-position: top center;
+  }
+  /*box profit*/
 }

@@ -1,6 +1,6 @@
 
 header#header-logo-main{
-  background: url("../images/banner-home.jpg") no-repeat top center;
+  background: url("../images/bg-main.jpg") no-repeat top center;
   -webkit-background-size: 100%;
   background-size: 100%;
   height: auto;
@@ -13,20 +13,9 @@ header#header-logo-main{
       border-right: 1px solid $color-white;
       padding: 7px 0;
       a{
-        padding-left: 20px;
         position: relative;
-        &:before{
-          content: '';
-          display: inline-block;
-          width: 15px;
-          height: 15px;
-          position: absolute;
-          top: 2px;
-          left: 0;
-        }
       }
     }
-
     .phone-number{
       a.telephone{
 
@@ -81,6 +70,9 @@ header#header-logo-main{
   /*box menu navigation header*/
   .box-menu-header{
     padding-top: 20px;
+    .mobile-menu{
+      display: none;
+    }
     .logo-main{
       text-align: center;
     }
@@ -94,7 +86,7 @@ header#header-logo-main{
             padding: 5px 20px;
             font-size: 1.3em;
             text-transform: uppercase;
-            font-weight: bold;
+            font-family: $main-b;
 
             &:hover, &.active {
               border: 2px solid $color-yellow;
@@ -136,13 +128,13 @@ header#header-logo-main{
         display: inline-block;
         padding: 10px 10px;
         font-size: 1.2em;
-        font-weight: bold;
+        font-family: $main-b;
       }
     }
     .advertise-right{
       .title-advertise{
         font-size: 2.5em;
-        font-weight: bold;
+        font-family: $main-b;
       }
       .description-advertise{
 
@@ -167,7 +159,7 @@ header#header-logo-main{
       line-height: 25px;
       display: inline-block;
       text-transform: uppercase;
-      font-weight: bold;
+      font-family: $main-b;
     }
     .box-eth{
       margin-left: 20px;
@@ -203,7 +195,7 @@ header#header-logo-main{
       text-transform: uppercase;
       cursor: pointer;
       margin-left: 20px;
-      font-weight: bold;
+      font-family: $main-b;
     }
     .message-box{
 
@@ -227,7 +219,7 @@ header#header-logo-main{
       font-size: 2em;
       padding-top: 50px;
       padding-bottom: 50px;
-      font-weight: bold;
+      font-family: $main-b;
       span.border-yellow{
         display: block;
         margin: auto;
@@ -241,8 +233,14 @@ header#header-logo-main{
       background: yellow;
       border-radius: 50%;
       height: 150px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       margin: auto;
     }
@@ -295,7 +293,7 @@ header#header-logo-main{
       padding-left: 20px;
       margin-left: 35px;
       text-transform: uppercase;
-      font-weight: bold;
+      font-family: $main-b;
     }
     .tab-change{
       padding-left: 50px;
@@ -306,7 +304,7 @@ header#header-logo-main{
         border-right: 1px solid $color-yellow;
       a{
         color: $color-black-text;
-        font-weight: bold;
+        font-family: $main-b;
         text-decoration: none;
         &:hover{
           color: $color-yellow;
@@ -330,6 +328,9 @@ header#header-logo-main{
       box-shadow: 5px 5px 5px $color-gray-shadow;
       padding: 20px;
       margin-bottom: 30px;
+      &:hover, &.active{
+        background: $color-yellow-hover;
+      }
       .img-logo{
         display: inline-block;
         float: left;
@@ -340,7 +341,7 @@ header#header-logo-main{
         padding-left: 10px;
         .title{
           font-size: 1.5em;
-          font-weight: bold;
+          font-family: $main-b;
         }
         .des{
 
@@ -368,7 +369,7 @@ header#header-logo-main{
       font-size: 1.5em;
       border-radius: 7px;
       color: $color-white;
-      font-weight: bold;
+      font-family: $main-b;
       cursor: pointer;
     }
   }
@@ -385,7 +386,7 @@ header#header-logo-main{
     font-size: 2em;
     padding-top: 50px;
     padding-bottom: 50px;
-    font-weight: bold;
+    font-family: $main-b;
     color: $color-black;
     .border-yellow{
       display: block;
@@ -410,7 +411,7 @@ header#header-logo-main{
         bottom: 20px;
         .title-news{
           font-size: 1.3em;
-          font-weight: bold;
+          font-family: $main-b;
           padding-bottom: 20px;
           display: block;
           height: 72px;
@@ -429,7 +430,7 @@ header#header-logo-main{
       font-size: 1.5em;
       border-radius: 7px;
       color: #ffffff;
-      font-weight: bold;
+      font-family: $main-b;
       cursor: pointer;
     }
   }
@@ -469,7 +470,7 @@ header#header-logo-main{
       background: $color-yellow;
       border-radius: 50px;
       padding: 5px 30px;
-      font-weight: bold;
+      font-family: $main-b;
       cursor: pointer;
     }
   }

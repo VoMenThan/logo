@@ -4,51 +4,184 @@ and (max-width: $devide_size_mobile)
   /*
 * devide mobile <425px
 */
-  header {
-    a.mobile-menu{
-      display: block;
-    }
-    nav.nav-giahu-page{
-      clear: both;
-      display: none;
-      ul.box-main-menu {
-        li.list-menu {
-          display: block;
+  header#header-logo-main{
+    -webkit-background-size: auto;
+    background-size: auto;
+    /*navigate status social top*/
+    .bar-top-header{
+      .button-top{
+        border: none;
+        padding: 2px 0;
+        a{
+          span{
+            display: none;
+          }
         }
       }
-      ul.box-sub-menu {
-        position: static;
-        .sub-item-menu {
-          padding: 9px 30px !important;
-          font-size: 15px !important;
-          border-top: none !important;
-        }
+      .phone-number{
+        a.telephone{
 
+        }
+      }
+      .send-mail{
+        a.email{
+
+        }
+      }
+      /*list socials*/
+      .list-socials{
+        border: none;
+        padding: 2px 0;
+        ul.box-socials{
+          text-align: center;
+        }
+      }
+
+    }
+    /*navigate status social top*/
+
+    /*box menu navigation header*/
+    .box-menu-header{
+      padding-top: 20px;
+      position: relative;
+      .mobile-menu{
+        display: block;
+        font-size: 2em;
+        text-align: right;
+        padding-right: 20px;
+        padding-bottom: 30px;
+      }
+      .logo-main{
+        text-align: center;
+      }
+      .nav-logo-page{
+        display: none;
+        ul.box-main-menu{
+          li.list-menu{
+            float: none;
+            a.item-menu{
+              display: block;
+              font-size: 1em;
+            }
+
+          }
+        }
       }
     }
-    div.logo-gia-hu {
-      float: left !important;
-      img{
-        width: 200px;
+    /*box menu navigation header*/
+
+    /*box advertise*/
+    .box-advertise{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      .advertise-left{
+        border: none;
+        .text-advertise{
+          font-size: 1.5em;
+        }
+        .btn-view {
+          height: auto;
+          padding: 5px 5px;
+          font-size: 1em;
+        }
+      }
+      .advertise-right {
+        .title-advertise{
+          font-size: 1.5em;
+          padding-top: 20px;
+        }
+      }
+
+    }
+    /*box advertise*/
+  }
+
+  .box-container {
+    .bar-status {
+      .box-btc, .box-eth{
+        padding-bottom: 5px;
+        display: block;
+      }
+      .box-eth {
+        margin-left: 0;
+      }
+      .btn-update {
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
+    }
+    .box-market-term {
+      .title-market-term{
+        font-size: 1.5em;
+      }
+      .box-circle-yellow{
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
+  /*box profit*/
+  .box-profit{
+    background-size: auto;
+    background-position: top center;
+    padding: 20px 0;
+    .title-profit{
+      font-size: 1.5em;
+    }
+  }
+  /*box profit*/
+
+  .tab-active-ico {
+    .box-tab {
+      .title-tab{
+        font-size: 1.5em;
+      }
+    }
+    .btn-view-all {
+      a{
+        font-size: 1em;
+      }
+    }
+  }
+
+
+  .view-our-lasted {
+    .box-list-news {
+      .box-item-news{
+        margin-bottom: 20px;
+      }
+    }
+    .title-view-our{
+      font-size: 1.5em;
+    }
+
+    .btn-view-all {
+      a{
+        font-size: 1em;
       }
     }
 
   }
-  @include setMarginTopMenu(56px);
-  @include resizeHeaderMenu(100%, 5px 15px, 15px);
-  @include setHeaderMenuMobile();
-  @include setFontSizeFooter();
 
-  @include setTabMenu(10px 10px, 14px, 100%, block);
-
-  @include setImagePartner(70%, -10%, 120%);
-  @include setMarginPartner(20px, 20px);
-
-  .content-portforlio div.box-portfolio{
-    margin-top: 20px;
-  }
-  .content-portforlio {
-    margin-top: 20px;
+  .box-newsletter {
+    padding: 20px;
     margin-bottom: 20px;
+    .box-input-email {
+      .input-email{
+        height: 30px;
+        padding: 5px 20px;
+        font-size: 1em;
+        margin-bottom: 10px;
+      }
+      .btn-subscribe {
+        font-size: 1em;
+        padding: 5px 30px;
+      }
+    }
   }
+
+
+
 }

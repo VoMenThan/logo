@@ -6,10 +6,19 @@ and (max-width: $devide_size_large)
   /*
 * devide medium > 992px and < 1200
 */
-  @include setMarginTopMenu(127px);
-  @include setHeaderMediumCenter();
-  @include setFontPortfolioTitleDes(22px, 14px);
-  .container.project-detail #sticky.stick{
-    top: 120px;
+  header#header-logo-main {
+    .box-menu-header {
+      .nav-logo-page {
+        ul.box-main-menu {
+          li.list-menu {
+            a.item-menu {
+              padding: 5px 15px;
+              font-size: 1em;
+
+            }
+          }
+        }
+      }
+    }
   }
 }
