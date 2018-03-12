@@ -1,0 +1,9 @@
+@media screen
+and (min-width: $devide_size_large)
+{
+  /*
+* devide large > 1200px
+*/
+  @include setMarginTopMenu(56px);
+  @include resizeHeaderMenu(100%, 19px 10px)
+}

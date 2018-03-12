@@ -1,0 +1,15 @@
+
+@media screen
+and (min-width: $devide_size_medium)
+and (max-width: $devide_size_large)
+{
+  /*
+* devide medium > 992px and < 1200
+*/
+  @include setMarginTopMenu(127px);
+  @include setHeaderMediumCenter();
+  @include setFontPortfolioTitleDes(22px, 14px);
+  .container.project-detail #sticky.stick{
+    top: 120px;
+  }
+}

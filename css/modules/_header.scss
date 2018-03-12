@@ -1,0 +1,507 @@
+
+header#header-logo-main{
+  background: url("../images/banner-home.jpg") no-repeat top center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  height: auto;
+  width: 100%;
+  /*navigate status social top*/
+  .bar-top-header{
+    border-bottom: 1px solid $color-white;
+    .button-top{
+      text-align: center;
+      border-right: 1px solid $color-white;
+      padding: 7px 0;
+      a{
+        padding-left: 20px;
+        position: relative;
+        &:before{
+          content: '';
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 2px;
+          left: 0;
+        }
+      }
+    }
+
+    .phone-number{
+      a.telephone{
+        &:before{
+          background: url("../images/ico-phone.png") no-repeat center center;
+          -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+        }
+      }
+    }
+    .send-mail{
+      a.email{
+        &:before{
+          background: url("../images/ico-mail.png") no-repeat center center;
+          -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+        }
+      }
+    }
+    /*list socials*/
+    .list-socials{
+      border-left: 1px solid $color-white;
+      padding: 7px 0 7px 20px;
+      ul.box-socials{
+        li.item-social{
+          display: inline-block;
+          padding-left: 20px;
+          span.icon{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: url("../images/list-icon-socials.png") no-repeat;
+            -webkit-background-size: auto 100%;
+            background-size: auto 100%;
+          }
+          span.fb{
+            background-position: -3px 0;
+          }
+          span.twitter{
+            background-position: -32px 0;
+          }
+          span.instagram{
+            background-position: -66px 0;
+          }
+          span.global{
+            background-position: -97px 0;
+          }
+          span.pinteres{
+            background-position: -128px 0;
+          }
+          span.other{
+            background-position: -159px 0;
+          }
+        }
+      }
+    }
+
+  }
+  /*navigate status social top*/
+
+  /*box menu navigation header*/
+  .box-menu-header{
+    padding-top: 20px;
+    .logo-main{
+      text-align: center;
+    }
+    .nav-logo-page{
+      ul.box-main-menu{
+        li.list-menu{
+          float: left;
+          @include transition(0.3s);
+          a.item-menu{
+            display: inline-block;
+            padding: 5px 20px;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover, &.active {
+              border: 2px solid $color-yellow;
+              color: $color-yellow;
+            }
+          }
+          a.btn-search{
+            &:hover, &.active{
+              border: none;
+
+            }
+            span.search{
+              width: 50px;
+              height: 50px;
+              background: url("../images/ico-search.png") no-repeat center center;
+              -webkit-background-size: 100%;
+              background-size: 100%;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*box menu navigation header*/
+
+  /*box advertise*/
+  .box-advertise{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .advertise-left{
+      border-right: 1px solid $color-white;
+      .text-advertise{
+        font-size: 2.5em;
+      }
+      .btn-view{
+        height: 40px;
+        background: $color-green;
+        display: inline-block;
+        padding: 10px 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+    .advertise-right{
+      .title-advertise{
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+      .description-advertise{
+
+      }
+    }
+  }
+  /*box advertise*/
+
+}
+
+
+.box-container{
+  /*box status*/
+    .bar-status{
+      background: $color-white;
+      color: $color-black-text;
+    border-left: 5px solid $color-yellow;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .box-btc, .box-eth{
+      line-height: 25px;
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .box-eth{
+      margin-left: 20px;
+    }
+    .ico-eth, .ico-btc{
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        float: left;
+      }
+    }
+    .ico-btc {
+      &:before {
+        background: url("../images/ico-btc.png") no-repeat;
+        background-size: 100%;
+      }
+    }
+    .ico-eth {
+      &:before {
+        background: url("../images/ico-eth.png") no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    .btn-update{
+      display: inline-block;
+      padding: 2px 10px;
+      background: $color-orange;
+      color: $color-white;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .message-box{
+
+    }
+    .text-red{
+      color: $color-orange;
+    }
+  }
+  .box-market-term{
+    background: $color-white;
+    color: $color-black-text;
+
+  }
+  /*box status*/
+
+  /*box market*/
+  .box-market-term{
+    padding-bottom: 70px;
+    .title-market-term{
+      text-align: center;
+      font-size: 2em;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-weight: bold;
+      span.border-yellow{
+        display: block;
+        margin: auto;
+        width: 100px;
+        border-bottom: 2px solid $color-yellow;
+        margin-top: 10px;
+      }
+    }
+    .box-circle-yellow{
+      width: 150px;
+      background: yellow;
+      border-radius: 50%;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .text-market{
+      padding: 10px 20px;
+      text-align: center;
+    }
+  }
+  /*box market*/
+}
+
+/*box profit*/
+.box-profit{
+  color: $color-white;
+  background: url("../images/bg-profit.jpg") no-repeat;
+  background-size: 100%;
+  padding: 50px 0;
+  .title-profit{
+    font-size: 2em;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-left: 2px solid $color-yellow;
+  }
+  .description-profit{
+    margin-bottom: 20px;
+  }
+  .button-today{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background: $color-yellow;
+    @include radius(7px);
+  }
+}
+/*box profit*/
+
+/*tab active*/
+
+.tab-active-ico{
+  background: $color-white;
+  color: $color-black-text;
+  padding-bottom: 50px;
+  .box-tab{
+    padding: 20px 0;
+    .title-tab{
+      font-size: 3em;
+      border-left: 2px solid $color-yellow;
+      display: inline-block;
+      padding-left: 20px;
+      margin-left: 35px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .tab-change{
+      padding-left: 50px;
+      border-bottom: 1px solid $color-yellow;
+      .tab-item{
+        display: inline-block;
+        padding: 5px 20px;
+        border-right: 1px solid $color-yellow;
+      a{
+        color: $color-black-text;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover{
+          color: $color-yellow;
+        }
+      }
+        &.active{
+          a{
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+  }
+
+  .tab-content{
+    .tab-pane{
+      padding-bottom: 10px;
+    }
+    .box-fintru{
+      border: 1px solid $color-black;
+      box-shadow: 5px 5px 5px $color-gray-shadow;
+      padding: 20px;
+      margin-bottom: 30px;
+      .img-logo{
+        display: inline-block;
+        float: left;
+        padding-top: 7px;
+      }
+      .title-finance{
+        display: inline-block;
+        padding-left: 10px;
+        .title{
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+        .des{
+
+        }
+        .dolar{
+
+        }
+        .color-red{
+          color: $color-orange;
+        }
+      }
+      .status{
+        padding-top: 15px;
+      }
+    }
+
+  }
+  .btn-view-all{
+    text-align: center;
+    a{
+      margin: auto;
+      display: inline-block;
+      background: $color-yellow;
+      padding: 7px 15px;
+      font-size: 1.5em;
+      border-radius: 7px;
+      color: $color-white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+/*tab active*/
+
+/*VIEW OUR LATEST NEWS*/
+.view-our-lasted{
+  background: $color-white;
+  padding-bottom: 50px;
+  margin-bottom: 10px;
+  .title-view-our{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: $color-black;
+    .border-yellow{
+      display: block;
+      margin: auto;
+      width: 100px;
+      border-bottom: 2px solid $color-yellow;
+      margin-top: 10px;
+    }
+  }
+  .box-list-news{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    .box-item-news{
+      position: relative;
+      .item-image{
+        width: 100%;
+      }
+      .text-info-news{
+        position: absolute;
+        left: 15px;
+        bottom: 20px;
+        .title-news{
+          font-size: 1.3em;
+          font-weight: bold;
+          padding-bottom: 20px;
+          display: block;
+          height: 72px;
+        }
+
+      }
+    }
+  }
+  .btn-view-all{
+    text-align: center;
+    a{
+      margin: auto;
+      display: inline-block;
+      background: $color-yellow;
+      padding: 7px 15px;
+      font-size: 1.5em;
+      border-radius: 7px;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+/*VIEW OUR LATEST NEWS*/
+
+/*Subscribe to ICOmarks Newsletter*/
+.box-newsletter{
+  background: $color-white;
+  color: $color-black;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 50px;
+  .title-newsletter{
+    font-size: 2em;
+    color: $color-yellow;
+  }
+  .des-newsletter{
+    padding-bottom: 20px;
+  }
+  .box-input-email{
+    .input-email{
+      display: inline-block;
+      height: 45px;
+      padding: 5px 20px;
+      border-radius: 20px;
+      background: $color-gray-input;
+      border: none;
+      font-size: 2em;
+      color: $color-gray-mail;
+    }
+    .btn-subscribe{
+      display: inline-block;
+      font-size: 2em;
+      text-transform: uppercase;
+      color: $color-white;
+      background: $color-yellow;
+      border-radius: 50px;
+      padding: 5px 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+/*Subscribe to ICOmarks Newsletter*/
+
+/*footer*/
+footer{
+  background: $color-black-footer;
+  border-top: 5px solid $color-yellow;
+  .content-footer{
+    padding: 30px;
+    .text-info-com{
+      width: 75%;
+      padding-top: 10px;
+    }
+    .list-menu-footer{
+      .item-menu{
+        width: 75%;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+/*footer*/
+
+

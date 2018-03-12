@@ -1,0 +1,13 @@
+body{
+  font-size: 14px;
+  color: $color-white;
+  background: $color-gray-bg;
+  a{
+    color: $color-white;
+    &:hover, &:active, &:visited, &:focus{
+      cursor: pointer;
+      color: $color-white;
+    }
+  }
+}
+@import "header";
